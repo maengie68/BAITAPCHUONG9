@@ -1,10 +1,9 @@
-print("Nhập vào số N lớn hơn 0: ")
-n = int(input())
-tong = 0
-for i in range(1, n):
-    if (n % i == 0):
-        tong += i
-if (tong == n):
-    print(n, " là số hoàn hảo")
-else:
-    print(n, " không phải là số hoàn hảo")
+# chương tình trả về phần nguyên của phép chia 2 số nguyên
+import math as neo
+def chia_lay_nguyen(x,y):
+    z = x/y
+    z1 = neo.floor(z)
+    print(z1)
+x = float(input("nhập số x: "))
+y = float(input("nhập số y: "))
+chia_lay_nguyen(x,y)
